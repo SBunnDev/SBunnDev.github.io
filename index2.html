@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+
+		<meta charset="utf-8" />
+		<meta name="keywords" content="" />
+
+		<title>NRCC Coding Club GitHub</title>
+		<link href="ccbase.css" rel="stylesheet" />
+		
+	</head>
+
+	<body>
+
+		<div class = "navbar" id = "navbar">
+			
+			<a href = "https://youtu.be/dQw4w9WgXcQ" class = "button">Home</a>
+			<a href = "https://youtu.be/dQw4w9WgXcQ" class = "button">About</a>
+			<a href = "https://discord.gg/XWKeWZ54HD" class = "button">Discord</a>
+			<a href = "https://github.com/newrivercodingclub" class = "button">Repo</a>
+			
+		</div>
+		
+		<div class = "title">
+			NRCC Coding Club
+		</div>
+
+		<div class = "mainText">
+			/* Bro ipsum dolor sit amet pow pow white room caballerial frozen chicken heads pipe switch scream hammer laps, bail Whistler. 
+			Steed single track 180 trail swag gorby. Gapers stoked backside, dust on crust grind T-bar ripper chillax acro couloir. 
+			Taco mitt hurl carcass glades free ride travel air. Wheelie drop slash cruiser scream wheels hammer 360 brain bucket huck gorby Bike bunny slope trucks bro sharkbite. 
+			Flowy core shot piste chain suck gaper, liftie hero booter couloir cruiser flow.
+			<br><br><br>
+			Presta glades derailleur, endo yard sale greasy piste frozen chicken heads skid lid pow pow taco. Bunny slope derailleur huckfest cruiser wheelie drop newschooler, taco 
+			glove BB washboard gondy stunt saddle pow pow jib. Epic giblets hammer wheelie drop ACL, gondy daffy caballerial flow whip park rat stoked bomb hole. Presta hot dogging first tracks hammer, 360 corduroy switch line dope epic death cookies ride around yard sale gapers.
+			Frozen chicken heads dirtbag sucker hole bro gear jammer smear park yard sale stomp over the bars punter. Yard sale laps free ride T-bar. Gorby dirt slash, acro ACL caballerial
+			bear trap euro huck stoked. Ripper rigid washboard hammer, huck butter brain bucket. Smear wheelie pow, grom flowy dope stomp. Ski spin afterbang afterbang endo rock-ectomy phat. */
+		</div>
+
+        <!---Single page React app with imported scripts. Borrowed *HEAVILY* from Intellipaat via https://www.youtube.com/watch?v=c453h7Mk3hc skip to about 13:12 -SB --->
+		<h1>React Window Work In Progress</h1>
+        <!--Below same as .root call in replit, just once again single page implimentation for ease of learning -SB -->
+        <div id="app"></div>
+        <!--Probably not the most up to date imports-->
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <!--Starts React content -SB -->
+        <script type="text/babel">
+
+            function Form() {
+                const [talkBox, setTalkBox] = React.useState("");
+
+
+                function handleSubmit(e) {
+                    e.preventDefault();
+                    setTalkBox("");
+                    console.log(talkBox);
+                }
+
+                return (
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="talkBox">Type in here and check your browser's console: </label>
+                        <input type="text" id="talkBox" value={talkBox} onChange={e => setTalkBox(e.target.value)} />
+                        <br />
+                        { talkBox }
+                        <br />
+                        <input type="submit" value="Submit Form" />
+                        
+                    </form>
+                )
+            }
+            
+            ReactDOM.render(<Form />, document.getElementById("app"))
+        </script>
+        <!--Ends React content -SB   -->
+		
+		<div class = "egg">
+			<a href="eggcrate.html">;</a>
+		</div>
+	</body>
+
+
+</html>

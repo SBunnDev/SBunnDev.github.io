@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap');
+
+
+			html{
+				height: 100%;
+				width: 100%;
+			}
+
+			body{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly;
+				min-height: 100%;
+				background: white;
+
+			}
+
+			.contentShadow{
+					padding: 2vh;
+					box-shadow: inset 0px 0px 6px rgba(0,0,0,0.5);
+			}
+
+			.currentPage{
+				background-color: rgba(0,0,0,0.25);
+			}
+
+			.title{
+				margin-top: 8vh;
+				padding: 2vh;
+				font-family: 'VT323', monospace;
+				color: black;
+				font-size: 5em;
+				text-align: center;
+			}
+
+			.navbar{
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				width: 100%;
+				background-color: #4158D0;
+				background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+			}
+
+			.button{
+				border-radius: 50px;
+				border: none;
+				color: white;
+				padding: 1.5vh;
+				margin: 1vh;
+				font-family: 'Roboto', sans-serif;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1.75em;
+
+			}
+
+			.button img{
+				flex-grow: -1;
+				padding: 0;
+				width: 24px;
+				height: 24px;
+				margin:0px;
+			}
+
+			.button:hover{
+				background-color: rgba(0,0,0,0.25)
+			}
+
+			.mainText{
+				justify-content: center;
+				padding: 5vh;
+				font-family: 'Roboto', sans-serif;
+				color: black;
+				font-size: 1.5em;
+
+			}
+
+			.egg{
+				justify-content: end;
+				text-decoration-color:beige;
+				text-decoration: none;
+				font-family: 'Roboto', sans-serif;
+				font-size: 2.5em;
+			}
+			.egg a:link,.egg a:visited{
+				color:beige;
+
+			}
+			.egg a:hover{
+				background-color: green;
+			}
+
+			div.mobcal {
+				display: none;
+			}
+
+		@media screen and (max-width: 480px) {
+			div.deskcal {
+				display:none;
+			}
+
+			div.mobcal {
+				display: flex;
+			}
+
+			.button{
+				border-radius: 50px;
+				border: none;
+				color: white;
+				padding: 1.5vh;
+				margin: 1vh;
+
+				font-family: 'Roboto', sans-serif;
+				text-align: center;
+				text-decoration: none;
+				font-size: 2.75vh;
+
+			}
+
+			
+
+		}
